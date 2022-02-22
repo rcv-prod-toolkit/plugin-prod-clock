@@ -1,6 +1,8 @@
+import { PluginContext } from 'rcv-prod-toolkit-types'
+
 const namespace = 'prod-clock';
 
-module.exports = async (ctx: any) => {
+module.exports = async (ctx: PluginContext) => {
   // Register new UI page
   ctx.LPTE.emit({
     meta: {
