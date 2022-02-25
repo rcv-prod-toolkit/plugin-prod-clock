@@ -1,4 +1,4 @@
-import { PluginContext } from 'rcv-prod-toolkit-types'
+import { PluginContext } from '@rcv-prod-toolkit/types'
 
 const namespace = 'prod-clock';
 
