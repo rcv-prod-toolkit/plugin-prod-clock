@@ -1,8 +1,8 @@
 import { PluginContext } from '@rcv-prod-toolkit/types'
 
-const namespace = 'prod-clock';
-
 module.exports = async (ctx: PluginContext) => {
+  const namespace = ctx.plugin.module.getName();
+
   // Register new UI page
   ctx.LPTE.emit({
     meta: {
@@ -38,6 +38,4 @@ module.exports = async (ctx: PluginContext) => {
     },
     status: 'RUNNING'
   });
-
-  await ctx.LPTE.await('lpt', 'ready', 150000);
 }
