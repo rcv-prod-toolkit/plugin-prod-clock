@@ -34,8 +34,6 @@ const getLocalTimeOffset = async () => {
 
 LPTE.onready(async () => {
   const [offset, ping] = await getLocalTimeOffset();
-  console.log('Offset: ', offset);
-  console.log('Ping: ', ping);
 
   const timeDocument = document.getElementById('server-time');
   document.getElementById('ping').innerText = ping;
