@@ -1,6 +1,6 @@
 {
   "name": "plugin-prod-clock",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Module that provides technology to synchronise client clocks",
   "author": "RCVolus",
   "license": "MIT",
